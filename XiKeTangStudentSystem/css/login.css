@@ -1,0 +1,43 @@
+﻿body {
+    margin : 0px; padding: 0px;text-align:center; font-size: 14px; font-family:Arial ,“微软雅黑”， SimHei;
+}
+/*头部的样式*/
+#header {
+    margin :0 auto 0 auto;
+}
+#header {
+    width: 960px;
+    height: 90px;
+    background: url(images/logo.png) no-repeat left center;
+    background-size: 172px auto;
+}
+/*登录容器的样式*/
+#loginwrapper {
+	width: 100%;
+	background: #3087C4;
+	min-width: 960px;
+}
+ #login{
+     height:540px;
+     width:960px;
+     background-color: #3087C4;
+     margin:0px auto 0px auto;
+     padding : 0px 0px 0px 0px ;
+ }
+.float {
+    text-align:left;
+        float:left;
+}
+#login-intro  {
+      text-align:left;
+      width:640px;
+      float:left;
+      background: #3087C4;
+}
+#login-intro-img {
+             text-align:left;       
+             width:640px;  
+             float:left;      
+             background: #3087C4;
+             padding-top:100px;
+}
