@@ -1,0 +1,63 @@
+﻿body {
+    text-align: center;
+}
+
+#querydiv {
+    width:960px;
+    float:left;
+}
+
+#querydiv td {
+        text-align: left;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: #00396B;
+    }
+#querydiv input:hover {
+        background-color: antiquewhite;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+ #querydiv input:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+.stuinfo {
+    width: 460px;
+    float: left;
+    border:1px  solid #D4D0C8;
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:14px;
+    margin-left: 8px;
+}
+.stuImg
+{
+	width: 150px;
+	height: 130px;
+	background-color: Gray;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+    margin-bottom:10px;
+	display: inline;
+}
+.stuItem
+{
+	width: 280px;
+	height: 30px;
+	line-height: 30px; /*内容垂直居中*/
+	float: left;
+	margin-top: 8px;
+	margin-left: 15px;
+	display: inline;
+}
+#data-src-Div {
+    width:960px;
+    float:left;
+}

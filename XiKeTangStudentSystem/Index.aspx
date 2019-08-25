@@ -11,8 +11,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+       
+        <div> 
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="kkkkkkkkk" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
+
         </div>
+        <p>
+
+            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+        </p>
     </form>
 </body>
 </html>

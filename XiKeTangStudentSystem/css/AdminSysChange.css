@@ -1,0 +1,160 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial,“微软雅黑”， SimHei;
+}
+
+#contrainer-logo {
+    width: 960px;
+    height: 90px;
+    background: url(images/logo.png) no-repeat left center;
+    background-size: 172px auto;
+    margin: 0px auto 0px auto;
+}
+
+#login {
+    height: 540px;
+    width: 960px;
+    background-color: #3087C4;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 0px 0px;
+}
+
+#contrainer-logo-img {
+    width: 270px;
+    float: left;
+    margin-top: 18px;
+}
+
+#logo-title {
+    width: 270px;
+    float: left;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+    #logo-title p {
+        word-spacing: 10px;
+        color: #5B9CFE;
+        margin-top: 10px;
+    }
+
+#contrainer {
+    width: 100%;
+    background: #3087C4;
+    min-width: 960px;
+}
+
+#contrainer-img {
+    width: 960px;
+    background: #3087C4;
+    margin: 0px auto 0px auto;
+}
+
+#contrainer-img-left {
+    float: left;
+    width: 640px;
+    background: #3087C4;
+    padding-top: 100px;
+    text-align: left;
+}
+
+#contrainer-login {
+    width: 320px;
+    height: 360px;
+    float: left;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+}
+
+/*login 部分*/
+#login-title {
+    width: 320px;
+    height: 55px;
+    line-height: 55px;
+    float: left;
+    padding-top: 0px;
+    text-align: center;
+    letter-spacing: 8px;
+    color: #000;
+    font-size: 18px;
+    margin-left: 0px;
+}
+
+#old-pwd {
+    width: 270px;
+    float: left;
+    margin-bottom: 18px;
+    border: solid 1px #CCCCCC;
+    padding: 0px 0px 0px 0px;
+    text-align: right;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    margin-left: 25px;
+}
+
+#new-pwd {
+    font-size: 16px;
+    font-family: "微软雅黑";
+    width: 270px;
+    float: left;
+    margin-bottom: 18px;
+    border: solid 1px #CCCCCC;
+    padding: 0px 0px 0px 0px;
+    text-align: right;
+    margin-left: 25px;
+}
+
+#new-pwd-ico {
+    width: 24px;
+    height: 24px;
+    float: left;
+    padding-top: 8px;
+    margin-left: 6px;
+}
+
+#old-pwd-ico {
+    width: 24px;
+    height: 24px;
+    float: left;
+    padding-top: 8px;
+    margin-left: 6px;
+}
+
+#submit {
+    width: 270px;
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+
+#submit input {
+        margin: 0px;
+        padding: 0px;
+    }
+
+ #submit input :hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+/*脚注部分*/
+#contrain-footer {
+    width: 960px;
+    margin: 0px auto 0px auto;
+}
+
+#footer {
+    width: 250px;
+    color: #007ACC;
+    font-family: 微软雅黑;
+    font-size: 14px;
+}
+
+    #footer p {
+        word-spacing: 10px;
+    }

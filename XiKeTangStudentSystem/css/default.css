@@ -1,0 +1,38 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial,"微软雅黑","宋体";
+}
+
+#containt {
+    width: 960px;
+    height:450px;
+    margin: 0px auto 0px auto;
+}
+#systitle {
+width:960px;
+float:left;
+background-color:#ffffff;
+margin-top:10px;
+margin-bottom:42px;
+}
+#systitle p {
+    text-align:center;
+    line-height:20px;
+    font-family:"微软雅黑";
+    font-size:30px;
+    letter-spacing:30px;
+    color:#6666ff;
+    }
+#sysimg {
+    width:960px;
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+    #sysimg img {
+    width:960px;
+      
+     }

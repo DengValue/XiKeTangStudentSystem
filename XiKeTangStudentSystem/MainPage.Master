@@ -4,21 +4,120 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="css/mainpage.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/plug-in.js"></script>
+    <link rel="icon" href="~/images/school_32px_1182184_easyicon.net.ico" />
+
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <div >
 
+    <form id="form1" runat="server">
+        <!--start 头部-->
+        <div id="topimg-contariner">
+            <div id="topimg"></div>
+            <asp:Image runat="server" ID="imagelogo" ImageUrl="~/images/logo.png" BorderStyle="None" />
         </div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <!--end Hearder-->
+        <!--start 网页TOP-->
+        <div id="container">
+            <div id="navbar">
+                <asp:Image runat="server" ID="imageNavbar" ImageUrl="~/images/navBar.png" BorderStyle="None" usemap="#map" />
+                <map name="map" id="map">
+                    <area alt="首页" shape="rect" coords="10,5,144,30" href="../default.aspx" />
+                    <area alt="添加学员" shape="rect" coords="168,7,258,27" href="../StudentWebASP/AddStudent.aspx" />
+                    <area alt="学员管理" shape="rect" coords="273,6,369,27" href="../StudentWebASP/StudentManage.aspx" />
+                    <area alt="学员成绩管理" shape="rect" coords="382,6,475,28" href="../StudentScore/StudentScore.aspx" />
+                    <area alt="修改管理员密码" shape="rect" coords="490,6,581,30" target="_blank" href="../SysAdmin/AdminSysChange.aspx" />
+                    <!--添加弹出层调用回调函数确认是否退出-->
+                    <area alt="退出系统" shape="rect" coords="596,6,691,29" />
+                    <input class="hidebtn" type="button" onclick="$.Pop('确认要关闭系统吗', 'confirm', function () { replace() })" />
+                </map>
+            </div>
+            <!--start 网站地图-->
+            <div id="webmapcontainer">
+                <div id="mapnavbar">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                </div>
+                <div id="login-user" style="color: #1f7aca; font-family: 微软雅黑; font-size: 16px; margin-bottom: 10px; margin-top: 10px;">
+                    <asp:Literal ID="username" runat="server">黎明</asp:Literal>
+                    <!--<asp:Literal ID="curentDateTime" runat="server">201020303</asp:Literal>-->
+                    <!--原生JS显示系统时间-->
+                    <p>系统时间:  <span id="locationtime"></span></p>
+                </div>
+            </div>
+            <!--end 网站地图-->
+            <!--start  基于母版页网页-->
+            <div id="page-conrainer">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--end 基于母版页网页-->
+            <div id="footor">
+                <div id="bottomBar">
+                    <p>本系统版权所有：&nbsp;喜科堂团队&nbsp;2012</p>
+                </div>
+
+            </div>
+        </div>
+        <!--end 网页头部-->
+            <script type="text/javascript">
+        function showLocale(objD) {
+            var str, colorhead, colorfoot;
+            var yy = objD.getYear();
+            if (yy < 1900) yy = yy + 1900;
+            var MM = objD.getMonth() + 1;
+            if (MM < 10) MM = '0' + MM;
+            var dd = objD.getDate();
+            if (dd < 10) dd = '0' + dd;
+            var hh = objD.getHours();
+            if (hh < 10) hh = '0' + hh;
+            var mm = objD.getMinutes();
+            if (mm < 10) mm = '0' + mm;
+            var ss = objD.getSeconds();
+            if (ss < 10) ss = '0' + ss;
+            var ww = objD.getDay();
+            if (ww == 0) colorhead = "<font color=\"#8631C7\">";
+            if (ww > 0 && ww < 6) colorhead = "<font color=\"#8631C7\">";
+            if (ww == 6) colorhead = "<font color=\"#8631C7\">";
+            if (ww == 0) ww = "星期日";
+            if (ww == 1) ww = "星期一";
+            if (ww == 2) ww = "星期二";
+            if (ww == 3) ww = "星期三";
+            if (ww == 4) ww = "星期四";
+            if (ww == 5) ww = "星期五";
+            if (ww == 6) ww = "星期六";
+            colorfoot = "</font>"
+            str = colorhead + yy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss + "  " + ww + colorfoot;
+            return (str);
+        }
+
+        function tick() {
+            var today;
+            today = new Date();
+            document.getElementById("locationtime").innerHTML = showLocale(today);
+            window.setTimeout("tick()", 1000);
+        }
+
+        tick();
+    </script>
+    <script type="text/javascript">
+
+        function old_page() {
+            window.location = "ExitSys.aspx";
+        }
+        function replace() {
+            window.location.replace("ExitSys.aspx");
+        }
+        function new_page() {
+            window.open("ExitSys.aspx");
+        }
+    </script>
     </form>
 </body>
 </html>

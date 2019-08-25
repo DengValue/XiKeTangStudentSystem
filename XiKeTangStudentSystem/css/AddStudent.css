@@ -1,0 +1,22 @@
+﻿body {
+       text-align:left;
+}
+.student-info-table td {
+    padding-bottom:10px;
+    padding-top:10px;
+        color:#00396B;
+}
+  .student-info-table  caption {
+    font-size:16px;
+    font-family:微软雅黑;
+    padding-bottom:10px;
+    padding-top:10px;
+    text-align:left;
+    color:#00396B;
+    }
+.imgStudent {
+    width:126px;
+    padding-left:10px;
+    margin-left:10px;
+
+}

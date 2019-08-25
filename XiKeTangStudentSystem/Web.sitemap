@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/default.aspx" title="喜课堂学员管理系统首页"  description="喜课堂学员管理系统首页">
+        <siteMapNode url="~/StudentWebASP/AddStudent.aspx" title="学员添加"  description="" />
+      <siteMapNode url="~/StudentWebASP/StudentManage.aspx" title="学员管理">
+        <siteMapNode url="~/StudentScore/StudentScore.aspx" title="学员成绩管理"/>
+        <siteMapNode url="~/StudentWebASP/StudentDetail.aspx" title="学员详细信息"/>
+        <siteMapNode url="~/StudentWebASP/EditStudent.aspx" title="修改学员信息"/>
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

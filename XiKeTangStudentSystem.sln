@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiKeTangStudentSystem", "XiKeTangStudentSystem\XiKeTangStudentSystem.csproj", "{8B28E77B-A156-4B30-833A-420BD8B23B98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{2211BA95-B12E-43C6-8859-7546E6EE126F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{0D9C4E33-2830-4C8F-9425-C41545F5A37F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8B28E77B-A156-4B30-833A-420BD8B23B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B28E77B-A156-4B30-833A-420BD8B23B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B28E77B-A156-4B30-833A-420BD8B23B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2211BA95-B12E-43C6-8859-7546E6EE126F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2211BA95-B12E-43C6-8859-7546E6EE126F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2211BA95-B12E-43C6-8859-7546E6EE126F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2211BA95-B12E-43C6-8859-7546E6EE126F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9C4E33-2830-4C8F-9425-C41545F5A37F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9C4E33-2830-4C8F-9425-C41545F5A37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9C4E33-2830-4C8F-9425-C41545F5A37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9C4E33-2830-4C8F-9425-C41545F5A37F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
